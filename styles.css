@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ecef;
+    padding: 20px;
+}
+.todo-container {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+input[type="text"], select, input[type="date"] {
+    padding: 10px;
+    width: calc(70% - 22px);
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+li.completed {
+    text-decoration: line-through;
+    background-color: #e2e6ea;
+}
+button.remove {
+    background-color: #dc3545;
+}
+button.edit {
+    background-color: #28a745;
+}
+button.edit:hover {
+    background-color: #218838;
+}
+.icon {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.priority-label, .date-label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.calendar-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.calendar-header button {
+    margin-right: .5rem;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: .5rem;
+}
+.day {
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: #f8f9fa;
+    text-align: center;
+    cursor: pointer;
+}
+.today {
+    background-color: #007bff;
+    color: white;
+}
+.has-tasks {
+    background-color: #ffc107 !important;
+}
+.task-summary {
+    font-size: .8em;
+    color: #333;
+    margin-top: .5rem;
+}
